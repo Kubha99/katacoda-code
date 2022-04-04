@@ -7,12 +7,14 @@
 
 name: CI with Gradle
 
+# Add On Tag
 on:
   push:
     branches: [ main ]
   pull_request:
     branches: [ main ]
 
+# Add Jobs
 jobs:
   build:
 
