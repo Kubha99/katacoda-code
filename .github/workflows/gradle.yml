@@ -8,26 +8,5 @@
 name: CI with Gradle
 
 # Add On Tag
-on:
-  push:
-    branches: [ main ]
-  pull_request:
-    branches: [ main ]
 
 # Add Jobs
-jobs:
-  build:
-
-    runs-on: ubuntu-latest
-
-    steps:
-    - uses: actions/checkout@v2
-    - name: Set up JDK 18
-      uses: actions/setup-java@v2
-      with:
-        java-version: '18'
-        distribution: 'temurin'
-    - name: Execute Build
-      run: gradle build
-    - name: Execute Tests
-      run: gradle test
