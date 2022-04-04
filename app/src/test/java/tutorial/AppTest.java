@@ -11,4 +11,22 @@ class AppTest {
         App classUnderTest = new App();
         assertNotNull(classUnderTest.getGreeting(), "app should have a greeting");
     }
+
+    @Test
+    void simpleAdditionTest(){
+      MathOne math1 = new MathOne();
+      assertEquals(math1.simpleAddition(1,1), 2);
+    }
+
+    @Test
+    void simpleMultiplicationTest(){
+      MathTwo math2 = new MathTwo();
+      assertEquals(math2.simpleMultiplication(1,1), 1);
+    }
+
+    @Test
+    void simpleIntegrationTest(){
+      App app = new App();
+      assertEquals(app.squareSum(2,3), 25);
+    }
 }
