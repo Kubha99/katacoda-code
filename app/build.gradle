@@ -9,14 +9,12 @@
 plugins {
     // Apply the application plugin to add support for building a CLI application in Java.
     id 'application'
+    // add maven-publish
 }
 
 repositories {
     // Use Maven Central for resolving dependencies.
     mavenCentral()
-// add maven-publish
-
-
 }
 
 dependencies {
